@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#7696B3</color>
+    <color name="colorPrimaryDark">#303f9f</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="itemShowBackground">#303F9F</color>
+    <color name="common1">#C1B4AF</color>
+    <color name="uncommon">#8C96E1</color>
+    <color name="rare">#4b69cd</color>
+    <color name="mythical">#8847ff</color>
+    <color name="legendary">#d32ce6</color>
+    <color name="ancient">#eb4b4b</color>
+    <color name="uniq">#caab05</color>
+    <color name="button">#4f7124</color>
+    <color name="background">#f9131e25</color>
+    <color name="textcolor">#ffffff</color>
+    <color name="gainBackground">#283139</color>
+    <color name="win">#00cc44</color>
+    <color name="lose">#cc0000</color>
+    <color name="selected">#be000000</color>
+    <color name="textColorDark">#000000</color>
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_mainmenu"
+            android:title="@string/nav_mainmenu" />
+        <item
+            android:id="@+id/nav_inventory"
+            android:title="@string/nav_inventory" />
+        <item
+            android:id="@+id/nav_open_case"
+            android:title="@string/nav_openCase" />
+        <item
+            android:id="@+id/nav_trade_up"
+            android:title="@string/title_activity_trade_up" />
+        <item
+            android:id="@+id/nav_jackpot"
+            android:title="@string/layoutJackpot" />
+        <item
+            android:id="@+id/nav_dice"
+            android:title="@string/nav_dice" />
+        <item
+            android:id="@+id/nav_mine"
+            android:title="@string/nav_minesweeper"/>
+        <item
+            android:id="@+id/nav_flip_coin"
+            android:title="@string/nav_flip_coin" />
+
+        <item
+            android:id="@+id/nav_config"
+            android:title="@string/nav_settings" />
+    </group>
+</menu>

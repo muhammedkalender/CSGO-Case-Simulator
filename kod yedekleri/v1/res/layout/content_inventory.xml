@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_inventory"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/a"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.tombulscasesimulator.Inventory"
+
+    tools:showIn="@layout/app_bar_inventory">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/backMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center"
+            android:layout_weight="8"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:id="@+id/wallet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="32dp"
+            android:gravity="right|center"
+            android:textColor="@color/textcolor" />
+
+    </LinearLayout>
+    <LinearLayout    android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="48dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:background="@android:drawable/screen_background_dark_transparent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="128dp"
+                android:layout_height="match_parent"
+                android:elevation="2dp"
+                app:srcCompat="@mipmap/ic_launcher" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.09"
+                    android:gravity="fill_vertical|center"
+                    android:text="TextView"
+                    android:textColor="@color/textcolor"
+                    android:textSize="30sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/rank"
+                        android:layout_width="58dp"
+                        android:layout_height="64dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@mipmap/ic_launcher" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/level"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="fill_vertical|center"
+                            android:text="Level : 1"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/textcolor"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/toplamDeger"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="fill_vertical|center"
+                            android:text="TextView"
+                            android:textAlignment="center"
+                            android:textColor="@color/textcolor"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/currentXP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:elevation="1dp"
+                android:gravity="fill_vertical|start"
+                android:text="TextView"
+                android:textAlignment="viewStart"
+                android:textColor="@color/textcolor"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/totalXP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="fill_vertical|end"
+                android:text="1.0"
+                android:textAlignment="gravity"
+                android:textColor="@color/textcolor"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/levelBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="50"
+            android:progress="10" />
+
+        <LinearLayout
+            android:id="@+id/object1"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:elevation="0dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="32dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@mipmap/back" />
+
+            <GridLayout
+                android:id="@+id/itemList"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_weight="1"
+                android:columnCount="4"
+                android:elevation="2dp">
+
+            </GridLayout>
+
+            <ImageView
+                android:id="@+id/nextButton"
+                android:layout_width="32dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@mipmap/forwad" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/page"
+                android:layout_width="71dp"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="@color/textcolor" />
+
+            <TextView
+                android:id="@+id/pageValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right|center"
+                android:text="TextView"
+                android:textColor="@color/textcolor" />
+
+        </LinearLayout>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/bannerEnventory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/AD_BANNER" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/itemInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:background="@color/gainBackground"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/infoQuality"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center"
+            android:text="TextView"
+            android:textAlignment="gravity"
+            android:textColor="@color/textcolor"
+            android:textSize="30sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/gainImageStattrak"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="120dp"
+                android:visibility="invisible"
+                app:srcCompat="@mipmap/stattrak" />
+
+            <ImageView
+                android:id="@+id/gainImageBack"
+                android:layout_width="180dp"
+                android:layout_height="180dp" />
+
+            <ImageView
+                android:id="@+id/gainImage"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                app:srcCompat="@drawable/ic_menu_camera" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/infoName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="@color/textcolor"
+            android:textColorLink="@color/textcolor"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/infoSkin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@color/textcolor"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonSell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/buttonshape"
+                android:text="Button"
+                android:textColor="@color/textcolor" />
+
+            <Button
+                android:id="@+id/buttonCancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/buttonshape"
+                android:text="@string/cancel"
+                android:textColor="@color/textcolor" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fatherChanceUserName"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="200dp"
+        android:background="@mipmap/background"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonshape"
+            android:gravity="fill_vertical|center"
+            android:text="@string/enterUsername"
+            android:textAlignment="gravity"
+            android:textColor="@color/textcolor"
+            android:textSize="36sp" />
+
+        <EditText
+            android:id="@+id/enterUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="16"
+            android:gravity="center_vertical|center"
+            android:inputType="textPersonName|textFilter"
+            android:maxLength="16"
+            android:text="Player"
+            android:textAlignment="gravity"
+            android:textColor="@color/textcolor"
+            android:textSize="36sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonChangeUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/buttonshape"
+                android:text="@string/okey"
+                android:textColor="@color/textcolor" />
+
+            <Button
+                android:id="@+id/buttonChanceUserNameCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/buttonshape"
+                android:text="@string/cancel"
+                android:textColor="@color/textcolor" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

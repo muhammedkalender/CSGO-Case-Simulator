@@ -1,0 +1,20 @@
+Update 1.6
+
+• Kasa açılımı güncellendi
+• Ram kullanımı azaltıldı
+• Bazı grafiksel hatalar düzeltildi
+• İletişim maili düzeltildi
+• Bazı dil sorunları düzeltildi
+• Bazı tasarım hataları düzeltildi
+• Eşyaların arasına aralık eklendi
+• Kasa fiyatları güncellendi
+
+
+• Case opening updated
+• Less ram usage
+• Fixed some graphical bugs
+• Chanced contact mail
+• Fixed some language bugs
+• Fixed some desingned bugs
+• Added margins between items
+• Updated case prices
